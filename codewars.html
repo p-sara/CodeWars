@@ -1,0 +1,18 @@
+<title>CodeWars</title>
+<script>
+
+    function duplicateCount(text){
+        let textArr = text.split('');
+        for (let i=0; i<textArr.length; i++) {
+            textArr[i].toLowerCase();
+            let sum = 0;
+            for (let j=0; j<textArr.length; j++) {
+                if (textArr[i]===textArr[j]) {
+                    console.log(textArr.indexOf(textArr[i]));
+                }
+            }
+        }
+
+    }
+    duplicateCount("Indivisibilities");
+</script>
